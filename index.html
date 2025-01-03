@@ -21,18 +21,18 @@
     <h2 class="titp">Ciao! Questo e il mio sito per prenotare gli inviti al mio compleanno!<br>Basta riempire il form qua sotto e cliccare invia!</h3>
 
         <div class="container mt-5">
-            <form id="form-disponabilita" action="https://formsubmit.io/send/compleanno.affix169@passinbox.com" method="post">
-              <input name="_formsubmit_id" type="text" style="display:none">
-              <input name="_redirect" type="hidden" id="name" value="https://compleanno12.vercel.app/grazie.html">
+            <form id="form-disponabilita" action="https://formsubmit.co/compleanno.affix169@passinbox.com" method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://compleanno12.vercel.app/grazie.html">
               <!-- Name and Surname on one line -->
               <div class="row mb-3">
                 <div class="col-md-6">
                   <label for="Nome" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="Nome" placeholder="Inserisci il tuo nome" required>
+                  <input type="text" name="nome" class="form-control" id="Nome" placeholder="Inserisci il tuo nome" required>
                 </div>
                 <div class="col-md-6">
                   <label for="Cognome" class="form-label">Cognome</label>
-                  <input type="text" class="form-control" id="Cognome" placeholder="Inserisci il tuo cognome" required>
+                  <input type="text" name="cognome" class="form-control" id="Cognome" placeholder="Inserisci il tuo cognome" required>
                 </div>
               </div>
           
@@ -40,11 +40,11 @@
               <div class="mb-3">
                 <label class="form-label">Verrai?</label><br>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="agreement" id="si" value="si">
+                  <input class="form-check-input" name="si" type="radio" id="si" value="si">
                   <label class="form-check-label" for="si">Si</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="agreement" id="no" value="no">
+                  <input class="form-check-input"  type="radio" name="no" id="no" value="no">
                   <label class="form-check-label" for="no">No</label>
                 </div>
               </div>
@@ -52,11 +52,11 @@
               <!-- Optional text input field for additional info -->
               <div class="mb-3">
                 <label for="allergie" class="form-label">Opzionale: Scrivi le tue Allergie/Intolleranze</label>
-                <textarea class="form-control" id="allergie" rows="3"></textarea>
+                <textarea class="form-control" id="allergie" name="allergie" rows="3"></textarea>
               </div>
               <div class="mb-3">
                 <label for="Messagio" class="form-label">Opzionale: Scrivi qualcosa che vorresti dirmi</label>
-                <textarea class="form-control" id="Messagio" rows="3" placeholder="Scrivimi qualunque cosa..."></textarea>
+                <textarea class="form-control" id="Messagio" name="messagio" rows="3" placeholder="Scrivimi qualunque cosa..."></textarea>
               </div>
               
               <!-- Submit Button -->
