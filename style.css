@@ -1,0 +1,50 @@
+/* Make the header a flex container */
+.header {
+    display: flex;
+    justify-content: center; /* Centers the content */
+    align-items: center; /* Vertically centers the items */
+    text-align: center;
+    margin-top: -50px;
+}
+
+/* Center the main title and apply font styling */
+.tit {
+    font-family: "Lilita One", serif;
+    color: blanchedalmond;
+    font-size: 2.5rem;
+}
+.tita{
+    font-family: "Lilita One", serif;
+    color: blanchedalmond;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Style for the left emoji */
+.emoji {
+    font-family: "Lilita One", serif;
+    color: blanchedalmond;
+    font-size: 2.5rem; /* Increase the size if necessary */
+    margin-right: 15px; /* Add space between the emoji and text */
+    margin-top: 100px;
+}
+
+/* Style for the right emoji */
+.emoji2 {
+    font-family: "Lilita One", serif;
+    color: blanchedalmond;
+    font-size: 2.5rem; /* Increase the size if necessary */
+    margin-left: 15px; /* Add space between the emoji and text */
+    margin-top: 100px;
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+.titp{
+    margin-top: 100px;
+    font-family: "Lilita One", serif;
+    color: blanchedalmond;
+    text-align: center;
+    
+}
